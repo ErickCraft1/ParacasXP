@@ -1,14 +1,7 @@
-import Nav from "../../components/common/Nav";
+import AdminDashboard from "../../components/admin/AdminDashboard";
 
 function Admin() {
-  return (
-    <>
-      <Nav />
-      <main className="min-h-screen">
-        <h1 className="text-2xl font-bold">Admin</h1>
-      </main>
-    </>
-  );
+  return <AdminDashboard />;
 }
 
 export default Admin;

@@ -7,11 +7,12 @@ interface NavProps {
   end?: ReactNode;
   variant?: "home" | "menu" | "search" | "reservation";
   breadcrumbs?: ReactNode;
+  class?: string;
 }
 
-function Nav({ start, middle, end, variant = "menu", breadcrumbs }: NavProps) {
+function Nav({ start, middle, end, variant = "menu", breadcrumbs, class: className }: NavProps) {
   return (
-    <nav className="w-full bg-white text-[#111]">
+    <nav className={`w-full bg-white text-[#111] ${className ?? ""}`}>
       <div
         className={
           variant === "reservation"

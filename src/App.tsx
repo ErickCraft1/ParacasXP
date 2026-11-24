@@ -6,9 +6,9 @@ import {
   Navigate,
   useLocation,
 } from "react-router-dom";
-import PublicLayout from "./layouts/PublicLayout";
+
+// Páginas administrativas
 import AdminLayout from "./layouts/AdminLayout";
-import HomePage from "./pages/public/HomePage";
 import AdminPage from "./pages/admin/AdminPage";
 import NewSalePage from "./pages/admin/NewSalePage";
 import ReturnsPage from "./pages/admin/ReturnsPage";
@@ -17,6 +17,10 @@ import UpcomingReservationsPage from "./pages/admin/UpcomingReservationsPage";
 import AccountsPage from "./pages/admin/AccountsPage";
 import TermsPage from "./pages/admin/TermsPage";
 import TourRegistrationPage from "./pages/admin/TourRegistrationPage";
+
+// Páginas públicas
+import PublicLayout from "./layouts/PublicLayout";
+import HomePage from "./pages/public/HomePage";
 import ProductsPage from "./pages/public/ProductsPage";
 import ProductPage from "./pages/public/ProductPage";
 import ReservaTourPaso1Page from "./pages/public/reservation/ReservaTourPaso1Page";

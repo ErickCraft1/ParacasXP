@@ -5,10 +5,10 @@ function BrandLink() {
     <Link
       to="/"
       aria-label="Ir al inicio"
-      className="h-[68px] w-[68px] shrink-0 overflow-hidden rounded-full"
+      className="h-[48px] w-[48px] shrink-0 overflow-hidden rounded-full"
     >
       <img
-        src="/path/to/your/logo.png"
+        src="/logo_paracas.jpeg"
         alt="Paracas XP"
         className="h-full w-full"
       />

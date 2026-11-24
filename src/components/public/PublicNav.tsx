@@ -85,15 +85,7 @@ function PublicNav({ reservationSteps }: PublicNavProps) {
     return (
       <Nav
         variant="reservation"
-        start={
-          <figure className="h-[68px] w-[68px] overflow-hidden rounded-full">
-            <img
-              src="/path/to/your/logo.png"
-              alt="Paracas XP"
-              className="h-full w-full"
-            />
-          </figure>
-        }
+        start={<BrandLink />}
         middle={<div className="flex justify-center">{reservationSteps}</div>}
         end={
           <div className="flex items-center gap-6">
@@ -155,13 +147,7 @@ function PublicNav({ reservationSteps }: PublicNavProps) {
         variant="search"
         start={
           <div className="flex w-full items-center gap-6">
-            <figure className="h-[68px] w-[68px] shrink-0 overflow-hidden rounded-full">
-              <img
-                src="/path/to/your/logo.png"
-                alt="Paracas XP"
-                className="h-full w-full"
-              />
-            </figure>
+            <BrandLink />
             <Search
               width="min(680px, 54vw)"
               className="mx-auto"
@@ -185,13 +171,7 @@ function PublicNav({ reservationSteps }: PublicNavProps) {
         variant="home"
         start={
           <div className="flex items-center">
-            <figure className="h-[68px] w-[68px] shrink-0 overflow-hidden rounded-full">
-              <img
-                src="/path/to/your/logo.png"
-                alt="Paracas XP"
-                className="h-full w-full"
-              />
-            </figure>
+            <BrandLink />
             <div className="ml-40 flex items-center gap-12">
               <button
                 type="button"
@@ -238,13 +218,7 @@ function PublicNav({ reservationSteps }: PublicNavProps) {
         variant="search"
         start={
           <div className="flex w-full items-center gap-6">
-            <figure className="h-[68px] w-[68px] shrink-0 overflow-hidden rounded-full">
-              <img
-                src="/path/to/your/logo.png"
-                alt="Paracas XP"
-                className="h-full w-full"
-              />
-            </figure>
+            <BrandLink />
             <Search
               width="min(680px, 54vw)"
               className="mx-auto"
@@ -271,13 +245,7 @@ function PublicNav({ reservationSteps }: PublicNavProps) {
         variant="search"
         start={
           <div className="flex w-full items-center gap-6">
-            <figure className="h-[68px] w-[68px] shrink-0 overflow-hidden rounded-full">
-              <img
-                src="/path/to/your/logo.png"
-                alt="Paracas XP"
-                className="h-full w-full"
-              />
-            </figure>
+            <BrandLink />
             <Search
               width="min(680px, 54vw)"
               className="mx-auto"

@@ -43,12 +43,14 @@ function HomePage() {
       <PageTitle title="Paracas XP - Inicio" />
       <PublicNav />
       <main className="flex min-h-screen flex-col items-center gap-4 px-6 py-12 md:px-12">
-        <h1 className="mt-0">Bienvenido a Paracas</h1>
+        <h1 className="mt-0 text-4xl text-white">
+          <strong>Bienvenido a Paracas</strong>
+        </h1>
         <Search width="min(680px, 54vw)" />
         <section className="flex w-full max-w-[1120px] flex-col gap-4 rounded-[4px] px-10 py-8 text-white">
-          <h2 className="text-white">Región Ica</h2>
+          <h2 className="text-white text-3xl">Región Ica</h2>
           <div className="flex w-full items-center justify-between gap-4">
-            <p>Disfruta de la belleza del sur chico</p>
+            <p className="text-xl">Disfruta de la belleza del sur chico</p>
             <Link
               to="/products"
               className="flex h-10 shrink-0 items-center justify-center rounded-[7px] bg-[#d84b4e] px-12 text-sm font-semibold text-white cursor-pointer border-1 border-[#4b8eb7]"

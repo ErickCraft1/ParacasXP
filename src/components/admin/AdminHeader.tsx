@@ -22,6 +22,7 @@ function AdminHeader({ title }: AdminHeaderProps) {
 
   return (
     <Nav
+      class="h-[114px] py-[1.6rem]"
       start={
         <h1 className="text-4xl font-semibold text-[#4c5664]">{pageTitle}</h1>
       }

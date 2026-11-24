@@ -35,43 +35,22 @@ function UserProfilePage() {
               </label>
 
               <label className="block text-[18px] font-semibold">
-                DNI / Pasaporte
+                Correo
                 <input
-                  name="document"
-                  type="text"
-                  placeholder="15286432"
+                  name="email"
+                  type="email"
+                  placeholder="erjcarrea@gmail.com"
                   className="mt-3 h-10 w-full rounded-[2px] border-0 bg-white px-3 text-[14px] text-[#111] placeholder:text-[#aaa] outline-none"
                 />
               </label>
 
               <label className="block text-[18px] font-semibold">
-                Celular
-                <div className="mt-3 flex h-10">
-                  <select
-                    aria-label="Prefijo telefónico"
-                    className="w-[62px] rounded-l-[2px] border-r border-[#ccc] bg-white px-2 text-[13px] text-[#111] outline-none"
-                  >
-                    <option value="+51">+51</option>
-                    <option value="+1">+1</option>
-                    <option value="+34">+34</option>
-                  </select>
-                  <input
-                    name="phone"
-                    type="tel"
-                    placeholder="956123456"
-                    className="min-w-0 flex-1 rounded-r-[2px] border-0 bg-white px-3 text-[14px] text-[#111] placeholder:text-[#aaa] outline-none"
-                  />
-                </div>
-              </label>
-
-              <label className="block text-[18px] font-semibold">
-                Correo
+                Contraseña
                 <input
-                  name="email"
-                  type="email"
-                  disabled
-                  placeholder="erjcarrea@gmail.com"
-                  className="mt-3 h-10 w-full cursor-not-allowed rounded-[2px] border-0 bg-[#d9dde1] px-3 text-[14px] text-[#777] placeholder:text-[#777] opacity-80 outline-none"
+                  name="password"
+                  type="password"
+                  placeholder="********"
+                  className="mt-3 h-10 w-full rounded-[2px] border-0 bg-white px-3 text-[14px] text-[#111] placeholder:text-[#aaa] outline-none"
                 />
               </label>
             </div>

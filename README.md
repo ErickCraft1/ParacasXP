@@ -1,35 +1,90 @@
-# React + TypeScript + Vite
+# Paracas XP
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Paracas XP es una aplicación web para gestionar y comercializar tours, reservas, pagos y operaciones administrativas relacionadas con la región de Ica.
 
-Currently, two official plugins are available:
+## Estado del programa
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este proyecto se encuentra en **versión beta**. Es una versión funcional para pruebas y demostraciones locales, pero aún puede contener errores, información de ejemplo y funcionalidades incompletas. No debe considerarse una versión lista para producción hasta completar las pruebas de integración y seguridad.
 
-## React Compiler
+## Requisitos para ejecutar el proyecto localmente
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Instala las siguientes herramientas:
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+- **Node.js 20.19 o superior** (se recomienda una versión LTS reciente).
+- **pnpm 10 o superior**.
+- **Git** para clonar el repositorio.
+- Un navegador moderno: Chrome, Edge o Firefox.
 
-## Expanding the Oxlint configuration
+Las dependencias principales incluyen React 19, Vite 8, TypeScript, Tailwind CSS, React Router, Recharts y Express.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Instalación
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+Desde la raíz del proyecto:
+
+```bash
+git clone https://github.com/ErickCraft1/ParacasXP.git
+cd ParacasXP
+pnpm install
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Comandos disponibles
+
+Iniciar únicamente el frontend:
+
+```bash
+pnpm dev
+```
+
+Iniciar únicamente el backend Express:
+
+```bash
+pnpm dev:server
+```
+
+Iniciar frontend y backend al mismo tiempo:
+
+```bash
+pnpm dev:full
+```
+
+Crear el build de producción del frontend:
+
+```bash
+pnpm build
+```
+
+Crear el build del servidor:
+
+```bash
+pnpm build:server
+```
+
+Ejecutar el linter:
+
+```bash
+pnpm lint
+```
+
+Previsualizar el build del frontend:
+
+```bash
+pnpm preview
+```
+
+## URLs locales
+
+- Frontend: `http://localhost:5173`
+- Backend: `http://localhost:3000`
+- API: `http://localhost:3000/api`
+
+## Compilación y pruebas antes de hacer commit
+
+Ejecuta al menos:
+
+```bash
+pnpm lint
+pnpm build
+pnpm build:server
+```
+
+Revisa también que los cambios no incluyan datos sensibles, contraseñas reales, claves privadas o variables de entorno personales.
